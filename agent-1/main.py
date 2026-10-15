@@ -10,7 +10,7 @@ from langchain_core.messages import ToolMessage
 from tools import get_stock_info
 import time
 
-key = "#"
+key = "key"
 
 model = "nvidia/nemotron-3-ultra-550b-a55b"
 

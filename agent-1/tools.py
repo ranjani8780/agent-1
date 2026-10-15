@@ -19,7 +19,7 @@ def get_stock_info(symbol: str) -> dict:
     url = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE"
     
     # Specify the trading pair (Bitcoin to Tether USD)
-    params = {"symbol": symbol, "apikey": "#"}
+    params = {"symbol": symbol, "apikey": "key"}
 
     response = requests.get(url, params=params)
     data = response.json()
@@ -39,7 +39,7 @@ def get_city_news(city:str) -> list[dict]:
 
 
     search_tool = TavilySearchResults(
-        tavily_api_key = "#",
+        tavily_api_key = "key",
         topic = "news",
         max_results = 5,
         search_depth = "advanced",
